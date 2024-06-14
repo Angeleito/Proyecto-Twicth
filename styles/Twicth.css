@@ -1,0 +1,1172 @@
+body{
+    background-color: #0E0E10;
+    overflow: hidden scroll;
+}
+
+
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: hsl(240, 6%, 10%);
+    display: flex;
+    position: fixed;
+    box-shadow: 1px 1px 1px black;
+    z-index: 2;
+}
+
+/*EXPLORAR*/
+
+nav #Explorar{
+    width: 300px;
+    height: 60px;
+    box-shadow: 8px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    color: white;
+}
+
+nav #Explorar #logo{
+    width: 40px;
+    cursor: pointer;
+}
+
+#explorar{
+    cursor: pointer;
+}
+
+nav #puntos{
+    display: none;
+}
+
+nav #Explorar input:checked ~ aside{
+    left: 160px;
+}
+
+nav #Explorar .barra-puntos{
+    width: 190px;
+    height: 770px;
+    position: absolute;
+    top: 40px;
+    left: -295px;
+    background-color: #1F1F23;
+    transition: top  0.1s linear;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px black;
+    padding: 15px;
+    z-index: 2;
+}
+
+nav #Explorar .barra-puntos ul{
+    list-style: none;
+}
+
+#GENERAL{
+    translate: 3px;
+    color: gray;
+}
+
+#Generales{
+    translate: 3px 10px;
+}
+#Generales1{
+    translate: 3px 20px;
+}
+#Generales2{
+    translate: 3px 30px;
+}
+#Generales3{
+    translate: 3px 40px;
+}
+#Generales4{
+    translate: 3px 50px;
+}
+#Generales5{
+    translate: 3px 60px;
+}
+#Generales6{
+    translate: 3px 70px;
+}
+#Generales7{
+    translate: 3px 70px;
+}
+#Generales8{
+    translate: 3px 80px;
+}
+#Generales9{
+    translate: 3px 90px;
+}
+#Generales10{
+    translate: 3px 100px;
+}
+#Generales11{
+    translate: 3px 110px;
+}
+
+#GENERAL1{
+    translate: 3px 120px;
+    font-size: 14px;
+    color: gray;
+}
+#General1{
+    translate: 3px 130px;
+}
+#General2{
+    translate: 3px 140px;
+}
+#General3{
+    translate: 3px 150px;
+}
+#General4{
+    translate: 3px 160px;
+}
+#General5{
+    translate: 3px 170px;
+}
+#General6{
+    translate: 3px 180px;
+}
+#General7{
+    translate: 3px 190px;
+}
+#General8{
+    translate: 3px 200px;
+}
+#General9{
+    translate: 3px 210px;
+}
+#General10{
+    translate: 3px 220px;
+}
+
+#tres-puntos{
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#tres-puntos:hover{
+    background-color: rgb(91, 90, 90);
+}
+
+/*BARRA DE BUSQUEDA*/
+
+nav form img{
+    width: 20px;
+    position: absolute;
+    left: 760px;
+    top: 15px;
+}
+
+nav form section{
+    position: relative;
+}
+
+nav #Busqueda{
+    width: 1200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#busqueda{
+    width: 400px;
+    height: 35px;
+    background-color: hsl(240, 6%, 10%);
+    border: solid 2px gray;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+nav #Busqueda #logo-busqueda{
+    width: 30px;
+}
+
+/*USUARIO*/
+
+nav #Usuario{
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+nav div #premiun{
+    display: none;
+}
+
+nav #Usuario input:checked ~ aside{
+    right: 250px;
+}
+
+nav #Usuario .barra-premiun{
+    width: 190px;
+    height: 100vh;
+    position: absolute;
+    top: 41px;
+    right: -250px;
+    background-color: #1F1F23;
+    color: white;
+    transition: top  0.1s linear;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px black;
+    padding: 10px;
+    z-index: 2;
+}
+
+nav #Usuario .barra-premiun ul{
+    list-style: none;
+}
+
+#logo-premiun{
+    width: 20px;
+    height: 20px;
+    translate: 4px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#logo-premiun:hover{
+    background-color: rgb(91, 90, 90);
+}
+
+#Iniciar{
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #35353C;
+    color: white;
+    cursor: pointer;
+}
+
+#Registrarse{
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #772CE8;
+    color: white;
+    cursor: pointer;
+}
+
+nav div #confi{
+    display: none;
+}
+
+nav #Usuario div input:checked ~ aside{
+    right: 6px;
+}
+
+nav #Usuario .barra-confi{
+    width: 190px;
+    height: 200px;
+    position: absolute;
+    top: 41px;
+    right: -250px;
+    background-color: #1F1F23;
+    color: white;
+    transition: top  0.1s linear;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px black;
+    padding: 10px;
+    z-index: 2;
+}
+
+nav #Usuario .barra-confi ul{
+    list-style: none;
+}
+
+#logo-confi{
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    translate: -3px;
+    cursor: pointer;
+}
+
+#logo-confi:hover{
+    background-color: rgb(91, 90, 90);
+}
+
+/*IDIOMA*/
+#logo-idioma{
+    width: 20px;
+    height: 20px;
+    translate: 5px 5px;
+}
+
+#idioma{
+    translate: 30px -18px;
+}
+
+#logo-derecha{
+    width: 10px;
+    height: 10px;
+    translate: 150px -35px;
+}
+/*HASTA AQUI*/
+
+/*MODO OSCURO*/
+#logo-oscuro{
+    width: 20px;
+    height: 20px;
+    translate: 5px -15px;
+    rotate: -40deg;
+}
+
+#fondo-oscuro{
+    translate: 35px -40px;
+    font-size: 15px;
+}
+
+#boton-oscuro{
+    width: 35px;
+    height: 20px;
+    translate: 140px -57px;
+}
+/*HASTA AQUI*/
+
+/*ETIQUETAS*/
+#logo-etiquetas{
+    width: 20px;
+    height: 20px;
+    translate: 8px -42px;
+}
+
+#Con-etiquetas{
+    translate: 34px -70px;
+}
+
+#logo-derecha2{
+    width: 10px;
+    height: 10px;
+    translate: 150px -100px;
+}
+/*HASTA AQUI*/
+
+/*INICIAR SESION*/
+#logoinicarsesion1{
+    width: 20px;
+    height: 20px;
+    translate: 8px -75px;
+}
+
+#iniciarsesion{
+    translate: 35px -100px;
+}
+
+/*MAIN*/
+
+/*BARRA LATERAL*/
+main aside{
+    width: 250px;
+    height: 100vh;
+    background-color: #1F1F23;
+    color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 1px black;
+    top: 60px;
+}
+
+main aside h4{
+    display: flex;
+    position: absolute;
+    translate: 10px 15px;
+}
+
+main aside ul #Nexxuz1{
+    translate: 0px 10px;
+}
+
+main aside ul #Nexxuz2{
+    translate: 0px -40px;
+}
+
+main aside ul #Nexxuz3{
+    translate: 0px -90px;
+}
+
+main aside ul #Nexxuz4{
+    translate: 0px -140px;
+}
+
+main aside ul #Nexxuz5{
+    translate: 0px -190px;
+}
+
+main aside ul #Nexxuz6{
+    translate: 0px -235px;
+}
+
+main aside ul #Nexxuz7{
+    translate: 0px -290px;
+}
+
+main aside ul #Nexxuz8{
+    translate: 0px -335px;
+}
+
+main aside ul #Nexxuz9{
+    translate: 0px -385px;
+}
+
+main aside ul #Nexxuz10{
+    translate: 0px -435px;
+}
+
+main aside ul li{
+    display: flex;
+    flex-direction: column;
+    translate: 10px;
+    padding: 0px 40px;
+    list-style: none;
+}
+
+main aside ul li .descrip{
+    color: gray;
+}
+
+main aside ul .foto-perfil{
+    width: 40px;
+    translate: -42px 37px;
+}
+
+main aside ul .foto-viewers{
+    width: 50px;
+    translate: 142px -29px;
+}
+
+/*VIDEOS INICIO*/
+
+#Videos{
+    width: 1433px;
+    height: 340px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    translate: 250px 63px;
+}
+
+main #Videos #flecha-izquierda{
+    width: 20px;
+    translate: -650px;
+    cursor: pointer;
+}
+main #Videos #flecha-derecha{
+    width: 20px;
+    translate: 650px;
+    cursor: pointer;
+}
+main #Videos #flecha-derecha:hover, #flecha-izquierda:hover{
+    background-color: rgb(91, 90, 90);
+    border-radius: 5px;
+}
+
+main #Videos div{
+    width: 800px;
+    height: 300px;
+    position: absolute;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+main #Videos div:hover{
+    transform: scale(1.05);
+}
+
+
+main #Videos div:nth-child(1){
+    background-color: aquamarine;
+    z-index: 4;
+}
+main #Videos div #video-inicios{
+    width: 800px;
+    height: 300px;
+}
+
+main #Videos div:nth-child(2){
+    height: 250px;
+    background-color: bisque;
+    translate: 120px;
+    z-index: 2;
+}
+main #Videos div #video-izquierdo1{
+    width: 800px;
+    height: 250px;
+}
+
+
+main #Videos div:nth-child(3){
+    height: 200px;
+    background-color: brown;
+    translate: 200px;
+}
+main #Videos div #video-izquierdo2{
+    width: 800px;
+    height: 200px;
+}
+
+
+main #Videos div:nth-child(4){
+    height: 250px;
+    background-color: darkgoldenrod;
+    translate: -120px;
+    z-index: 2;
+}
+main #Videos div #video-derecho1{
+    width: 800px;
+    height: 250px;
+}
+
+
+main #Videos div:nth-child(5){
+    background-color: crimson;
+    height: 200px;
+    translate: -200px;
+}
+main #Videos div #video-derecho2{
+    width: 800px;
+    height: 200px;
+}
+
+
+
+/*CANALES EN VIVO*/
+#categoria1{
+    width: 1433px;
+    height: 340px;
+    position: relative;
+    color: white;
+    translate: 250px 80px;
+}
+
+main #categoria1 div #parrafo1{
+    width: 420px;
+    height: 25px;
+    font-size: 20px;
+    translate: 21px 15px; 
+}
+
+main #categoria1 div #parrafo1 span{
+    color: #772CE8;
+}
+
+/*VIDEO 1*/
+main #categoria1 #ibai2{
+    width: 330px;
+    height: 280px;
+    translate: 21px 20px;
+}
+
+#video{
+    width: 328px;
+    height: 190px;
+    background-color: blueviolet;
+}
+
+main #categoria1 #ibai2 #video img{
+    width: 330px;
+    height: 190px;
+    translate: -1.8px;
+    transition: all 0.1s linear;
+}
+
+main #categoria1 #ibai2 #video img:hover{
+    translate: 5px -5px;
+}
+
+main #categoria1 #ibai2 #Descripcion img{
+    width: 50px;
+    translate: 2px 10px;
+}
+
+main #categoria1 #ibai2 #Descripcion #descrip-parrafo1{
+    width: 273px;
+    font-size: 13.5px;
+    translate: 55px -40px;
+}
+
+#descrip-parrafo1:hover{
+    color: blueviolet;
+}
+
+.descripciones{
+    color: gray;
+    translate: 55px -35px;
+}
+
+main #categoria1 #ibai2 #Descripcion #IRL{
+    width: 35px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    translate: 59px -25px;
+    background-color: #35353C;
+    border-radius: 10px;
+}
+
+#KINGS{
+    width: 78px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    translate: 97px -45px;
+    background-color: #35353C;
+    border-radius: 10px;
+}
+
+#KOI{
+    width: 35px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    translate: 177px -65px;
+    background-color: #35353C;
+    border-radius: 10px;
+}
+
+#Espanol{
+    width: 55px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    translate: 214px -85px;
+    background-color: #35353C;
+    border-radius: 10px;
+}
+/*HASTA AQUI*/
+
+/*VIDEO 2*/
+main #categoria1 #nesst{
+    width: 330px;
+    height: 280px;
+    translate: 370px -260px;
+}
+
+main #categoria1 #nesst #video-nesst{
+    width: 330px;
+    height: 193px;
+    transition: all 0.1s linear;
+}
+
+main #categoria1 #nesst #video-nesst:hover{
+
+    translate: 5px -5px;
+}
+
+main #categoria1 #nesst #foto-perfil-nesst{
+    width: 50px;
+    translate: 2px 4px;
+}
+
+main #categoria1 #nesst p{
+    translate: 55px -50px;
+    font-size: 13.4px;
+}
+
+#descrip-parrafo2:hover{
+    color: blueviolet;
+}
+
+.descripciones2{
+    color: gray;
+    translate: 55px -50px;
+}
+
+#conduccion{
+    width: 70px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #35353C;
+    translate: 65px -45px;
+}
+
+#Espanol2{
+    width: 55px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #35353C;
+    translate: 137px -65px;
+}
+
+#desst3{
+    width: 45px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #35353C;
+    translate: 195px -85px;
+}
+
+#Gta{
+    width: 35px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #35353C;
+    translate: 242px -105px;
+}
+
+/*HASTA AQUI*/
+
+/*Video 3*/
+main #categoria1 #nexxus{
+    width: 330px;
+    height: 280px;
+    translate: 720px -540px;
+}
+
+main #categoria1 #nexxus #video-nesus{
+    width: 330px;
+    height: 193px;
+    transition: all 0.1s linear;
+}
+
+main #categoria1 #nexxus #video-nesus:hover{
+    translate: 5px -5px;
+}
+
+main #categoria1 #nexxus #foto-perfil-nesus{
+    width: 50px;
+    translate: 2px 4px;
+}
+
+main #categoria1 #nexxus p{
+    font-size: 15px;
+    translate: 55px -52px;
+}
+
+#parrafo-nexxus:hover{
+    color: blueviolet;
+}
+
+.descripciones3{
+    color: gray;
+    translate: 55px -50px;
+}
+
+#Espanol3{
+    width: 60px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #35353C;
+    translate: 65px -45px;
+}
+
+/*HASTA AQUI*/
+
+/*VIDEO 4*/
+main #categoria1 #guibe{
+    width: 330px;
+    height: 280px;
+    translate: 1070px -820px;
+}
+
+main #categoria1 #guibe #GG{
+    width: 330px;
+    height: 193px;
+    transition: all 0.1s linear;
+}
+
+main #categoria1 #guibe #GG:hover{
+    translate: 5px -5px;
+}
+
+main #categoria1 #guibe #gg{
+    width: 50px;
+    translate: 2px 4px;
+}
+
+main #categoria1 #guibe p{
+    font-size: 13.5px;
+    translate: 52px -50px;
+}
+
+#parrafo-guibe:hover{
+    color: blueviolet;
+}
+
+.descripciones4{
+    color: gray;
+    translate: 55px -50px;
+}
+
+#ANIMES{
+    width: 50px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #35353C;
+    translate: 65px -45px;
+}
+
+#juegos{
+    width: 60px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #35353C;
+    translate: 117px -64px;
+}
+
+#REACCION{
+    width: 55px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #35353C;
+    translate: 179px -84px;
+}
+
+#anime{
+    width: 60px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #35353C;
+    translate: 236px -104px;
+}
+/*HASTA AQUI*/
+
+/*JUEGOS MOBA*/
+#categoria2{
+    width: 1433px;
+    height: 340px;
+    display: flex;
+    position: relative;
+    color: white;
+    translate: 250px 100px;
+}
+
+main #categoria2 div #parrafo2{
+    color: #772CE8;
+    translate: 20px;
+    font-size: 20px;
+    width: 130px;
+    height: 10px;
+}
+
+/*MOBA 1*/
+main #categoria2 #moba1{
+    width: 330px;
+    height: 280px;
+    translate: -110px 25px;
+}
+
+main #categoria2 #MOBA1-1{
+    width: 330px;
+    height: 193px;
+    transition: all 0.1s linear;
+}
+
+main #categoria2 #MOBA1-1:hover{
+    translate: 5px -7px;
+}
+
+#foto-perfil-moba1{
+    width: 50px;
+    translate: 2px 4px;
+}
+
+#parrafo-moba1{
+    translate: 55px -50px;
+}
+
+#parrafo-moba1:hover{
+    color: blueviolet;
+}
+
+.descrip-moba1{
+    color: gray;
+    translate: 55px -50px;
+}
+
+#LOL{
+    width: 70px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #35353C;
+    translate: 65px -45px;
+}
+
+#Worlds1{
+    width: 50px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #35353C;
+    translate: 137px -65px;
+}
+
+#lol{
+    width: 100px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #35353C;
+    translate: 189px -85px;
+}
+/*HASTA AQUI*/
+
+/*MOBA 2*/
+main #categoria2 #moba2{
+    width: 330px;
+    height: 280px;
+    translate: -90px 25px;
+}
+
+#parrafo-moba2{
+    font-size: 13.5px;
+    translate: 53px -52px;
+}
+
+#parrafo-moba2:hover{
+    color: blueviolet;
+}
+
+.descrip-moba2{
+    color: gray;
+    translate: 55px -50px;
+}
+
+#Espanol4{
+    width: 60px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #35353C;
+    translate: 65px -45px;
+}
+
+/*HASTA AQUI*/
+
+/*MOBA 3*/
+main #categoria2 #moba3{
+    width: 330px;
+    height: 280px;
+    translate: -70px 25px;
+}
+
+#english{
+    width: 60px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #35353C;
+    translate: 65px -45px;
+}
+
+#esports{
+    width: 60px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #35353C;
+    translate: 127px -65px;
+}
+/*HASTA AQUI*/
+
+/*MOBA 4*/
+main #categoria2 #moba4{
+    width: 330px;
+    height: 280px;
+    translate: -50px 25px;
+}
+
+#parrafo-moba3{
+    font-size: 14.5px;
+    translate: 54px -50px;
+}
+
+#parrafo-moba3:hover{
+    color: blueviolet;
+}
+
+#VTUBER{
+    width: 50px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #35353C;
+    translate: 65px -45px;
+}
+
+#WASHED{
+    width: 50px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #35353C;
+    translate: 117px -64px;
+}
+
+#RATKING{
+    width: 50px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #35353C;
+    translate: 170px -84px;
+}
+
+#lec{
+    width: 40px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #35353C;
+    translate: 222px -104px;
+}
+/*HASTA AQUI*/
+
+/*CATEGORIAS QUE PODRIAN GUSTARTE*/
+#categoria3{
+    width: 1433px;
+    height: 340px;
+    display: flex;
+    position: relative;
+
+    color: white;
+    translate: 250px 120px;
+}
+
+main #categoria3 div #parrafo3{
+    width: 300px;
+    height: 10px;
+    translate: 20px;
+    font-size: 20px;
+}
+
+main #categoria3 div #parrafo3 span{
+    color: #772CE8;
+}
+
+main #categoria3 div #gustar1{
+    width: 165px;
+    translate: -280px 25px;
+}
+
+main #categoria3 div #gustar2{
+    width: 165px;
+    translate: -270px 27px;
+}
+
+main #categoria3 div #gustar3{
+    width: 165px;
+    translate: -260px 27px;
+}
+
+main #categoria3 div #gustar4{
+    width: 165px;
+    translate: -250px 27px;
+}
+
+main #categoria3 div #gustar5{
+    width: 165px;
+    translate: -240px 27px;
+}
+
+main #categoria3 div #gustar6{
+    width: 165px;
+    translate: -230px 27px;
+}
+
+main #categoria3 div #gustar7{
+    width: 165px;
+    translate: -220px 27px;
+}
+
+main #categoria3 div #gustar8{
+    width: 165px;
+    translate: -210px 27px;
+}
+
+main #categoria4 div{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    background-color: #451093;
+    border-radius: 7px;
+    z-index: 2;
+    bottom: 0;
+    color: rgb(249, 240, 240);
+}
+
+main #categoria4 div p{
+    translate: 30px 20px;
+}
+
+main #categoria4 div p span{
+    color: rgb(255, 255, 255);
+}
+
+main #categoria4 div #publi-twitch{
+    width: 40px;
+    height: 40px;
+    translate: 20px 10px;
+}
+
+main #categoria4 div input{
+    width: 90px;
+    height: 30px;
+    translate: 820px 15px;
+    border-radius: 9px;
+    border: none;
+}
